@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Social
 
 struct Question {
     var question : String!
@@ -18,6 +19,33 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var Label: UILabel!
     @IBOutlet var buttons: [UIButton]!
+    
+    @IBAction func tweetButton(sender: AnyObject) {
+        
+        if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter){
+            let tweetController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+            tweetController.setInitialText("I scored \(highScore) in Quizzy, can you beat me ?")
+            
+            self.presentViewController(tweetController, animated: true, completion: nil)
+        }
+        else {
+            let alert  = UIAlertController(title: "Accounts", message: "You are not logged in to a twitter account, please login", preferredStyle: UIAlertControllerStyle.Alert)
+            
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            alert.addAction(UIAlertAction(title: "Settings", style: UIAlertActionStyle.Default, handler: {
+                
+                (UIAlertAction) in
+            let URLSettings = NSURL(string: UIApplicationOpenSettingsURLString)
+            
+                if let url = URLSettings {
+                    UIApplication.sharedApplication().openURL(url)
+                }
+            
+            
+            }))
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
+    }
     
     @IBOutlet weak var Score: UILabel!
     
