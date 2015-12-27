@@ -14,6 +14,7 @@
 		2873768F1C2EE591002952B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2873768D1C2EE591002952B8 /* LaunchScreen.storyboard */; };
 		2873769A1C2EE591002952B8 /* QuizzyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287376991C2EE591002952B8 /* QuizzyTests.swift */; };
 		287376A51C2EE591002952B8 /* QuizzyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287376A41C2EE591002952B8 /* QuizzyUITests.swift */; };
+		288CE7A51C307C7C00684364 /* ios in Resources */ = {isa = PBXBuildFile; fileRef = 288CE7A41C307C7C00684364 /* ios */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		287376A01C2EE591002952B8 /* QuizzyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuizzyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		287376A41C2EE591002952B8 /* QuizzyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzyUITests.swift; sourceTree = "<group>"; };
 		287376A61C2EE591002952B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		288CE7A41C307C7C00684364 /* ios */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ios; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				287376981C2EE591002952B8 /* QuizzyTests */,
 				287376A31C2EE591002952B8 /* QuizzyUITests */,
 				287376821C2EE591002952B8 /* Products */,
+				288CE7A41C307C7C00684364 /* ios */,
 			);
 			sourceTree = "<group>";
 		};
@@ -231,6 +234,7 @@
 			files = (
 				2873768F1C2EE591002952B8 /* LaunchScreen.storyboard in Resources */,
 				2873768C1C2EE591002952B8 /* Assets.xcassets in Resources */,
+				288CE7A51C307C7C00684364 /* ios in Resources */,
 				2873768A1C2EE591002952B8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +488,7 @@
 				287376AB1C2EE591002952B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		287376AC1C2EE591002952B8 /* Build configuration list for PBXNativeTarget "QuizzyTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +497,7 @@
 				287376AE1C2EE591002952B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		287376AF1C2EE591002952B8 /* Build configuration list for PBXNativeTarget "QuizzyUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +506,7 @@
 				287376B11C2EE591002952B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
